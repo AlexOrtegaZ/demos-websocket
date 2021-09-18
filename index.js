@@ -12,7 +12,6 @@ const webSocketServer = new WebSocket.Server({ server });
 const webSockets = {};
 
 webSocketServer.on('connection', function (webSocket, req) {
-    console.log(req.url);
     var userID = req.url.substr(1)
     webSockets[userID] = webSocket
     console.log('connected: ' + userID + ' in ' + Object.getOwnPropertyNames(webSockets))
