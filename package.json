@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "pm2 start ecosystem.config.json --no-daemon"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "http": "0.0.1-security",
-    "ws": "^8.2.2"
+    "ws": "^8.2.2",
+    "pm2": "^5.1.0"
   }
 }
